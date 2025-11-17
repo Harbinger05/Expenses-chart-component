@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Chart Component</title>
+    <link rel="shortcut icon" href="images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="expenses-chart">
+        <section class="expenses-chart__balance">
+            <div class="balance__info">
+                <label class="balance__title">My balance</label>
+                <h1 class="balance__amount">$921.48</h1>
+            </div>
+
+            <img class="balance__logo" src="images/logo.svg" alt="logo">
+        </section>
+
+        <section class="expenses-chart__spendings">
+            <h1 class="spendings__title">Spending - Last 7 days</h1>
+
+            <div class="spendings__bars">
+                <div class="bar">
+                    <p class="bar__amount">$17.45</p>
+                    <div class="bar__bar" data-height="53"></div>
+                    <p class="bar__day">mon</p>
+                </div>
+
+                <div class="bar">
+                    <p class="bar__amount">$34.91</p>
+                    <div class="bar__bar" data-height="104"></div>
+                    <p class="bar__day">tue</p>
+                </div>
+
+                <div class="bar">
+                    <p class="bar__amount">$52.36</p>
+                    <div class="bar__bar bar--blue-color" data-height="156"></div>
+                    <p class="bar__day">wed</p>
+                </div>
+
+                <div class="bar">
+                    <p class="bar__amount">$31.07</p>
+                    <div class="bar__bar" data-height="93"></div>
+                    <p class="bar__day">thu</p>
+                </div>
+
+                <div class="bar">
+                    <p class="bar__amount">$23.39</p>
+                    <div class="bar__bar" data-height="69"></div>
+                    <p class="bar__day">fri</p>
+                </div>
+
+                <div class="bar">
+                    <p class="bar__amount">$43.28</p>
+                    <div class="bar__bar" data-height="129"></div>
+                    <p class="bar__day">sat</p>
+                </div>
+
+                <div class="bar">
+                    <p class="bar__amount">$25.48</p>
+                    <div class="bar__bar" data-height="75"></div>
+                    <p class="bar__day">sun</p>
+                </div>
+            </div>
+
+            <div class="spendings__total">
+
+                <div class="total__this-month">
+                    <p class="this-month__heading">Total this month</p>
+                    <h1 class="this-month__amount">$478.33</h1>
+                </div>
+
+                <div class="total__last-month">
+                    <p class="last-month__increase">+2.4%</p>
+                    <p class="last-month__heading">from last month</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
